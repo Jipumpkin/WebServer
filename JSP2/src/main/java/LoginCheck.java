@@ -1,0 +1,39 @@
+
+import java.io.IOException;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.websocket.Session;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+/**
+ * Servlet implementation class LoginCheck
+ */
+@WebServlet("/LoginCheck")
+public class LoginCheck extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+
+	String id = "smart";
+	String pw = "1234";
+	
+	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		request.setCharacterEncoding("EUC-KR");
+		
+		String inid = request.getParameter("id");
+		String inpw = request.getParameter("pw");
+		
+		if(inid.equals(id) || inpw.equals(pw)) {
+			request.getSession().setAttribute("id", id);
+			response.sendRedirect("main.jsp");
+		} else {
+			response.sendRedirect("loginForm.html");
+		}
+	}
+
+}

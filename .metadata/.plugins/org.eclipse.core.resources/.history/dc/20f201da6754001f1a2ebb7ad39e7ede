@@ -1,0 +1,42 @@
+<%@ page language="java" contentType="text/html; charset=EUC-KR" pageEncoding="EUC-KR"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>결과</title>
+</head>
+<body>
+
+<%
+    request.setCharacterEncoding("EUC-KR"); // 폼 데이터 인코딩 설정
+
+    // "name" 파라미터 값을 가져옴
+    String name = request.getParameter("name");
+    
+    // "fruit" 파라미터 값을 배열로 가져옴
+    String[] fruits = request.getParameterValues("fruit");
+%>
+
+    <table border="2">
+        <tr>
+            <td>이름</td>
+            <td><%= name %></td>
+        </tr>
+        <tr>
+            <td>좋아하는 과일</td>
+            <td>
+                <%
+                    if (fruits != null && fruits.length > 0) {
+                        for (String fruit : fruits) {
+                            out.print(fruit + " ");
+                        }
+                    } else {
+                        out.print("선택된 과일이 없습니다.");
+                    }
+                %>
+            </td>
+        </tr>
+    </table>
+
+</body>
+</html>

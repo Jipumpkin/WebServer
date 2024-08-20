@@ -1,0 +1,31 @@
+INDEX VERSION 1.134
+C:\Users\USER\Desktop\WebServer\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3082411578.index
+\BlueWave\src
+C:\Users\USER\Desktop\WebServer\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4134246390.index
+\scope\src\main\java
+C:\Users\USER\Desktop\WebServer\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3470258600.index
+\BlueWave\src\main\java
+C:\Users\USER\Desktop\WebServer\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\485228680.index
+\BlueWave\src\main\java
+C:\Users\USER\Desktop\WebServer\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1819585658.index
+\JSTL\src\main\java
+C:\Users\USER\Desktop\WebServer\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1613286339.index
+\JSP\src\main\java
+C:\Users\USER\Desktop\WebServer\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2943853640.index
+\Blue Wave\src\main\java
+C:\Users\USER\Desktop\WebServer\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3281373496.index
+\CookieSession\src\main\java
+C:\Users\USER\Desktop\WebServer\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1534721364.index
+\FrontCommandPattern\src\main\java
+C:\Users\USER\Desktop\WebServer\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3508871579.index
+\BlueWave\src\main\java
+C:\Users\USER\Desktop\WebServer\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1349329388.index
+\Blue Wave\src\main\java
+C:\Users\USER\Desktop\WebServer\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3334375010.index
+\GitTest01\src\main\java
+C:\Users\USER\Desktop\WebServer\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4023197742.index
+\MessageSystem\src
+C:\Users\USER\Desktop\WebServer\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3264646868.index
+\BlueWave\src\main\java
+C:\Users\USER\Desktop\WebServer\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1112296857.index
+\JSP2\src\main\java

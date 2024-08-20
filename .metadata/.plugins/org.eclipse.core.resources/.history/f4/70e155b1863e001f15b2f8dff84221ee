@@ -1,0 +1,29 @@
+<%@ page language="java" contentType="text/html; charset=EUC-KR"
+    pageEncoding="EUC-KR"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<%
+		// today 올리기
+		
+		int count = 0;
+	
+		count++;
+		
+		
+	
+		application.setAttribute("today",(Integer)count);
+	
+		String today = (String)application.getAttribute("today");
+		
+		out.println("오늘 방문자 수 : " + today);
+		
+	%>
+
+</body>
+</html>

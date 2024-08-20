@@ -1,0 +1,31 @@
+<%@ page language="java" contentType="text/html; charset=EUC-KR"
+    pageEncoding="EUC-KR"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<%
+		session.setAttribute("num", 10);
+	%>
+	
+	<h3>산술연산자</h3>
+	${num + 5} <br>
+	${num - 5} <br>
+	${num * 5} <br>
+	${num / 2} ${num div 2}<br>
+	${num % 3} ${num mod 3}<br>
+	
+	<h3>비교연산자</h3>
+
+	
+	<h3>논리연산자</h3>
+	${num > 5 && num > 3} ${num > 5 and num > 3} <br>
+	${num > 5 || num > 3} ${num > 5 or num > 3} <br>
+	
+	
+</body>
+</html>

@@ -1,0 +1,23 @@
+<%@ page language="java" contentType="text/html; charset=EUC-KR"
+    pageEncoding="EUC-KR"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<table border="2px solid">
+		<tr>
+			<td>이름</td>
+			<td><%= request.getParameter("name") %></td>
+		</tr>
+		<tr>
+			<td>좋하하는 과일</td>
+			<td><%= request.getParameter("fruit") %></td>
+		</tr>
+	</table>
+
+</body>
+</html>

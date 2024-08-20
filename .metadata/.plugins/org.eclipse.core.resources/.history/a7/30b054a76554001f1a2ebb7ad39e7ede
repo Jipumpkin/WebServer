@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+	<style>
+
+	
+	</style>
+
+<body>
+
+	<table border="2px solid">
+		<tr>
+			<td>이름</td>
+			<td>입력</td>
+		</tr>
+		<tr>
+			<td>좋아하는 과일</td>
+			<td>입력</td>
+		</tr>
+		<tr colspan="2">
+			<td><input type="submit"> </td>
+		</tr>
+		
+	</table>
+
+</body>
+</html>

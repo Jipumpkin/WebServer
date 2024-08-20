@@ -1,0 +1,43 @@
+<%@page import="java.util.ArrayList"%>
+<%@ page language="java" contentType="text/html; charset=EUC-KR"
+    pageEncoding="EUC-KR"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<c:forEach var="i" begin="1" end="10" step="1">
+	
+		${i } 번 맞을래요? <br>
+	
+	
+	</c:forEach>
+	
+	<hr>
+	
+	<% 
+		ArrayList<String> list = new ArrayList<String>();
+		list.add("양배추");
+		list.add("아스파라거스");
+		list.add("마늘");
+		list.add("아보카도");
+		
+		session.setAttribute("list", list);
+	%>
+	
+	
+	
+	<c:forEach var="i" begin="1" end="10" step="1">
+		
+		list.get(i)
+	</c:forEach>
+	
+	
+	
+
+</body>
+</html>

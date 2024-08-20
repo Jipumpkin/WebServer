@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;JSP/src/main/webapp/ex03join.html&apos; to &apos;ex07.html&apos;" description="Rename resource &apos;ex03join.html&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/main/webapp/ex03join.html" name="ex07.html" stamp="1720077565521" updateReferences="true"/>
+</session>

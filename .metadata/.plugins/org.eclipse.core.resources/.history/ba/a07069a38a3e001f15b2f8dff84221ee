@@ -1,0 +1,33 @@
+<%@ page language="java" contentType="text/html; charset=EUC-KR"
+pageEncoding="EUC-KR"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+
+<%
+// today 값 가져오기
+String todayStr = (String)application.getAttribute("today");
+int today;
+
+// today 값이 없으면 0으로 초기화, 있으면 정수로 변환
+if(todayStr == null) {
+    today = 0;
+} else {
+    today = Integer.parseInt(todayStr);
+}
+
+// 방문자 수 증가
+today++;
+
+// 증가된 값을 다시 application에 저장
+application.setAttribute("today", String.valueOf(today));
+
+out.println("오늘 방문자 수 : " + today);
+%>
+
+</body>
+</html>

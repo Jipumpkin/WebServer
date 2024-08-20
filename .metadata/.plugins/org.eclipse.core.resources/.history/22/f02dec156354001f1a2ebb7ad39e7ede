@@ -1,0 +1,26 @@
+<%@ page language="java" contentType="text/html; charset=EUC-KR"
+    pageEncoding="EUC-KR"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+    <table style="border: solid;">
+        <tr>
+            <td>열 1</td>
+            <td>열 2</td>
+            <td>열 3</td>
+            <td>열 4</td>
+            <td>열 5</td>
+            <td>열 6</td>
+            <td>열 7</td>
+            <td>열 8</td>
+            <td>열 9</td>
+        </tr>
+    </table>
+
+
+</body>
+</html>

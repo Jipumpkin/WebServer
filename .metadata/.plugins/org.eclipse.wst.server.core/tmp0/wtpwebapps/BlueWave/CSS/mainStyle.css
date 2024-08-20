@@ -1,0 +1,222 @@
+/* 정책 추천 섹션 */
+.policy-container {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+.policy-text {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    line-height: 1.5;
+    color: #003b75;
+}
+#Blue {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    line-height: 1.5;
+    color: #2f00ff;
+}
+
+
+
+.policy-container a {
+    color: #0d0049;
+    font-weight: bold;
+}
+
+/* 인기 게시물 섹션 */
+.popular-post {
+    display: flex;
+    background-color: #f0f8ff;
+    border-radius: 0px;
+    padding: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-bottom: 20px;
+    margin-left: -20px; /* 부모 요소의 패딩만큼 음수 마진 설정 */
+    margin-right: -20px; /* 부모 요소의 패딩만큼 음수 마진 설정 */
+    width: calc(100% + 40px); /* 부모 요소의 패딩을 고려한 너비 설정 */
+    box-sizing: border-box;
+}
+
+.post-content {
+    flex: 2;
+    padding-right: 20px;
+}
+
+.post-title {
+    color: #0066cc;
+    margin-bottom: 10px;
+}
+
+.post-description {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.post-image {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.post-image img {
+    max-width: 100%;
+    height: 300px;
+    border-radius: 5px;
+}
+
+/* 게시물 액션 버튼 섹션 */
+.post-actions {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* 버튼 사이의 간격 설정 */
+    margin-top: 10px;
+    margin-bottom: 100px;
+}
+
+/* 좋아요 버튼 스타일 */
+.like-btn {
+    background-color: #4caf50; /* 초록색 */
+    color: white;
+    padding: 15px 30px; /* 버튼의 크기와 여백 조정 */
+    border: none;
+    border-radius: 12px; /* 버튼 모서리의 둥글기 설정 */
+    font-size: 16px; /* 버튼 텍스트 크기 */
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.like-btn img {
+    width: 70px;
+}
+
+.like-btn:hover {
+    background-color: #45a049; /* 더 어두운 초록색 */
+    transform: scale(1.05);
+}
+
+/* 싫어요 버튼 스타일 */
+.dislike-btn {
+    background-color: #f44336; /* 빨간색 */
+    color: white;
+    padding: 15px 30px; /* 버튼의 크기와 여백 조정 */
+    border: none;
+    border-radius: 12px; /* 버튼 모서리의 둥글기 설정 */
+    font-size: 16px; /* 버튼 텍스트 크기 */
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
+.dislike-btn img {
+    transform: scaleY(-1); /* 이미지 상하 반전 */
+    width: 70px;
+}
+
+.dislike-btn:hover {
+    background-color: #e53935; /* 더 어두운 빨간색 */
+    transform: scale(1.05);
+}
+
+/* 커뮤니티 이동 버튼 스타일 */
+.community-btn {
+    background-color: #2196f3; /* 파란색 */
+    color: white;
+    text-decoration: none; /* 링크일 경우 기본 밑줄 제거 */
+    padding: 15px 30px; /* 버튼의 크기와 여백 조정 */
+    border: none;
+    border-radius: 12px; /* 버튼 모서리의 둥글기 설정 */
+    font-size: 16px; /* 버튼 텍스트 크기 */
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.community-btn:hover {
+    background-color: #1976d2; /* 더 어두운 파란색 */
+    transform: scale(1.05);
+}
+
+
+
+/* 정책 리스트 스타일 */
+
+.policy-list {
+    width: 70%;
+    margin-top: 25px;
+}
+.bestPolicy {
+    background-color: #e8f5e9;
+    margin-bottom: 25px;
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+.Policy-row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 1300px;
+    box-sizing: border-box;
+}
+
+
+
+.policy-info h3 {
+    margin: 0 0 5px 0;
+    font-size: 1em;
+}
+
+.date {
+    font-size: 0.8em;
+    color: #666;
+}
+
+/* 버튼 스타일 */
+.btn {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+
+    cursor: pointer;
+    font-size: 0.9em;
+}
+
+.btn.view {
+    background-color: #4caf50;
+    color: white;
+}
+
+.btn.view.blue {
+    background-color: #85c5f9;
+}
+
+.btn.compare {
+    background-color: white;
+    border: 1px solid #ddd;
+    margin-left: 5px;
+}
+
+.allpolicyViewButton {
+    border: none;
+    border-radius: 10px;
+    margin: 50px;
+    padding: 20px 80px 20px 80px;
+    font-size: 20px;
+    background: linear-gradient(90deg, #1b1bff, #4b7bff, #6aa0ff, #97c4ff);
+}
+
+.APVbtn {
+    color: #ffffff;
+}
+
+.allpolicyViewButton:hover {
+    transform: scale(1.05);
+}
+
+

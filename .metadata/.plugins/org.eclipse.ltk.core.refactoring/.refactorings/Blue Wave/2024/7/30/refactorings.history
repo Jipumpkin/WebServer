@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;Blue Wave/WebContent/main.html&apos; to &apos;main.jsp&apos;" description="Rename resource &apos;main.html&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="WebContent/main.html" name="main.jsp" stamp="1721719468514" updateReferences="true"/>
+</session>

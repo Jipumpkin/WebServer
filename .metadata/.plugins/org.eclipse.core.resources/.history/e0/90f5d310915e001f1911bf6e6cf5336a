@@ -1,0 +1,23 @@
+<%@ page language="java" contentType="text/html; charset=EUC-KR"
+    pageEncoding="EUC-KR"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<div class="container">
+	  <h2>Panel Footer</h2>
+	  <div class="panel panel-default">
+	    <div class="panel-heading">회원가입</div>
+	    <div class="panel-body">Panel Content</div>
+	    <div class="panel-footer">웹기반 인공지능 Track2(B) - 박지호</div>
+	  </div>
+	</div>
+
+</body>
+</html>

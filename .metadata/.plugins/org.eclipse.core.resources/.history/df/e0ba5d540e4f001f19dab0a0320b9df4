@@ -1,0 +1,86 @@
+<%@page import="com.model.UserDTO"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>글쓰기 - 커뮤니티</title>
+<link rel="stylesheet" href="CSS/base.css">
+</head>
+<body>
+
+	<%
+	UserDTO info = (UserDTO) session.getAttribute("user");
+	%>
+	<header>
+		<nav>
+		    <div class="logo">
+		        <a href="main.jsp"> <img src="image/Blue Wave.png" alt="Blue Wave Logo"> </a>
+		    </div>
+		
+		    <div class="right-menu">
+		        <%
+		        if (info != null) {
+		        %>
+		            <a class="logNavBtn" href="LogoutServlet">로그아웃</a>
+		        <%
+		        } else {
+		        %>
+		            <a class="logNavBtn" href="login.jsp">로그인</a>
+		        <%
+		        }
+		        %>
+		    </div>
+		</nav>
+	</header>
+	
+	<div class="container">
+		<h1>글쓰기</h1>
+		<form action="postSaveServlet" method="post" enctype="multipart/form-data"> <%//action에 postsaveservlet임!!!! %>
+			<div class="form-group">
+				<label for="userId">작성자:</label>
+				<%
+				if (info != null && info.getUserId() != null) {
+				%>
+				작성자 :<%=info.getUserId()%>
+				<%
+				} else {
+				%>
+				<script type="text/javascript">
+            alert("로그인이 필요합니다.");
+            window.location.href = "login.jsp";
+        </script>
+				<%}%>
+			</div>
+			<div class="form-group">
+				<label for="title">제목:</label> <input type="text" id="title"
+					name="title" required>
+			</div>
+			<div class="form-group">
+				<label for="content">내용:</label>
+				<textarea id="content" name="content" rows="10" required></textarea>
+			</div>
+			<div class="form-group">
+				<label for="file">첨부파일:</label> <input type="file" id="file"
+					name="file">
+			</div>
+			<div class="form-group">
+				<button type="submit" class="submit-button">저장</button>
+			</div>
+		</form>
+	</div>
+    <!-- 웹페이지 최하단 -->
+    <footer>
+        <div class="footer-container">
+            <img src="image/Blue Wave.png" alt="Logo" class="footer-logo">
+            <nav class="footer-nav">
+                <a href="#">팀 소개</a>
+                <a href="#">이용약관</a>
+                <a href="#">개인정보처리방침</a>
+                <a href="#">시스템 문의</a>
+            </nav>
+        </div>
+    </footer>
+</body>
+</html>
