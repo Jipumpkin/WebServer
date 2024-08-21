@@ -41,12 +41,8 @@ public class LoginController extends HttpServlet {
 		// info의 상태에 따라 로그인 상태를 결정함
 		if(info != null) {
 			System.out.println("로그인 성공");
-//			System.out.println(info.getEmail());
-//			System.out.println(info.getPw());
-//			System.out.println(info.getPhone());
-//			System.out.println(info.getAddr());
-			// 확인용
 			HttpSession session = request.getSession();
+			
 			session.setAttribute("info", info);
 		}else {
 			System.out.println("로그인 실패");
