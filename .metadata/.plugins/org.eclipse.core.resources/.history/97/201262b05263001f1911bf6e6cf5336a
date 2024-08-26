@@ -1,0 +1,36 @@
+package com.controller;
+
+import com.model.WMemberDAO;
+import com.model.WMemberVO;
+
+public class JoinController {
+	
+	public String execute() {
+		
+		request.setCharacterEncoding("EUC-KR");
+		
+		String id = request.getParameter("id");
+		
+		String pw = request.getParameter("pw");
+		
+		String nick = request.getParameter("nick");
+		
+//		System.out.println(id + "/" + pw + "/" + "nick");
+		WMemberVO vo = new WMemberVO(id,pw,nick);
+		
+		WMemberDAO dao = new WMemberDAO();
+		
+		int cnt = dao.join(vo);
+		
+		
+		if(cnt > 0 ) {
+			System.out.println("회원가입 성공!");
+		} else {
+			System.out.println("회원가입 실패.");
+		}
+		
+		response.sendRedirect("main.jsp");
+		
+	}
+	
+}

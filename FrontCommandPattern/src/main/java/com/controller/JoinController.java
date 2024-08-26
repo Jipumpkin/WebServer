@@ -1,21 +1,19 @@
 package com.controller;
 
+
 import java.io.IOException;
 
 import javax.servlet.ServletException;
-import javax.servlet.annotation.WebServlet;
-import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import com.front.Command;
 import com.model.WMemberDAO;
 import com.model.WMemberVO;
 
-@WebServlet("/JoinController")
-public class JoinController extends HttpServlet {
-
-	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		
+public class JoinController implements Command{
+	
+	public String execute(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
 		request.setCharacterEncoding("EUC-KR");
 		
@@ -39,10 +37,8 @@ public class JoinController extends HttpServlet {
 			System.out.println("회원가입 실패.");
 		}
 		
-		response.sendRedirect("main.jsp");
-		
-		
+		return "main.jsp";
 		
 	}
-
+	
 }

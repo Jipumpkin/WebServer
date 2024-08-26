@@ -37,7 +37,7 @@
 		    
 		    <div class="panel-body">
 		    
-				<form action="JoinController" method="post">
+				<form action="join.do" method="post">
 				  <div class="form-group">
 				    <label for="id">ID : </label>
 				    <input type="text" class="form-control" id="id" name="id">

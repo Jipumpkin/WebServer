@@ -72,11 +72,11 @@
 		  			  	
 		  			  	 -->
 		  			  	, Welcome! <br>
-						<a href="LogoutController"><button class="btn btn-danger">로그아웃</button></a>
+						<a href="logout.do"><button class="btn btn-danger">로그아웃</button></a>
 						
 						<!-- 아이디가 admin인 사람만 -->
 						<c:if test="${info.id eq 'admin'}">
-							<a class="btn btn-info" href="ListController">회원정보</a>	
+							<a class="btn btn-info" href="list.do">회원정보</a>	
 						</c:if>
 						
 		    	</c:if>
